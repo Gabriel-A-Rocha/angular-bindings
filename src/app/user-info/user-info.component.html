@@ -1,7 +1,10 @@
 <div class="username-form">
 
+    <h2>Insert username:</h2>
     <input type="text" [(ngModel)]="username" (input)="handleInputChange($event)">
-    <p>{{username}}</p>
+
+    <p>Username inserted: {{username}}</p>
+
     <button class="btn btn-primary" [disabled]="buttonDisabledStatus" (click)="resetUsername()">Reset Username</button>
 
 </div>
