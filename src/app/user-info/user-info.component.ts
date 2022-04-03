@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserInfoComponent implements OnInit {
   username = '';
-  buttonDisabledStatus = true;
 
   constructor() {}
 
@@ -15,12 +14,10 @@ export class UserInfoComponent implements OnInit {
 
   resetUsername() {
     this.username = '';
-    this.buttonDisabledStatus = true;
     this.renderUsernameText();
   }
 
   handleInputChange(evt: any) {
-    this.buttonDisabledStatus = !evt.target.value;
     this.renderUsernameText();
   }
 
