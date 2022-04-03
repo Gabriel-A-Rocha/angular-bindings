@@ -16,6 +16,7 @@ export class UserInfoComponent implements OnInit {
   resetUsername() {
     this.username = '';
     this.buttonDisabledStatus = true;
+    this.renderUsernameText();
   }
 
   handleInputChange(evt: any) {
@@ -26,7 +27,6 @@ export class UserInfoComponent implements OnInit {
   renderUsernameText() {
     const usernameText = document.querySelector('p');
     if (usernameText) {
-      console.log('\n🪁 ~ usernameText', usernameText);
       usernameText.style.display = !!this.username ? 'block' : 'none';
     }
   }
