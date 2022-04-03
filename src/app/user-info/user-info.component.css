@@ -1,12 +1,21 @@
 .username-form {
-  padding: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* padding: 1rem; */
+  margin: 2rem auto;
 }
 
 input {
   margin-bottom: 1rem;
 }
 
+h2 {
+  font-size: large;
+}
+
 p {
   color: grey;
   font-style: italic;
+  display: none;
 }
